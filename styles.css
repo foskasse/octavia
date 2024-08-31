@@ -1,0 +1,133 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    text-align: center;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+    margin: 20px auto;
+}
+
+h1 {
+    color: #333;
+}
+
+#counter {
+    font-size: 2em;
+    color: #007bff;
+}
+
+.chart-container {
+    margin-top: 20px;
+    max-width: 35%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+canvas {
+    width: 100% !important;
+    height: auto !important;
+}
+
+.scroll-indicator {
+    margin-top: 20px;
+    text-align: right;
+    font-size: 18px;
+    color: #007bff;
+}
+
+.scroll-indicator span {
+    font-size: 24px;
+    animation: bounce 2s infinite;
+    display: inline-block;
+    margin-left: 5px;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(10px);
+    }
+}
+
+.additional-container {
+    margin-top: 40px;
+    text-align: justify;
+    line-height: 1.6;
+    font-size: 18px;
+    color: #333;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.additional-container h2 {
+    text-align: center;
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+.additional-container img {
+    max-width: 80%; /* Aumentado para 80% da largura do contêiner */
+    height: auto;
+    margin: 20px auto 0; /* Centralizado e com margem no topo */
+    display: block; /* Certifica-se de que a imagem seja tratada como bloco */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.image-container img {
+    max-width: 100%; /* Mantém a imagem adicional na largura total */
+    height: auto;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.footer {
+    margin-top: 40px;
+    padding: 10px;
+    text-align: center;
+    background-color: #007bff;
+    color: #ffffff;
+    border-radius: 10px;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .scroll-indicator {
+        text-align: center;
+        font-size: 16px;
+    }
+
+    .scroll-indicator span {
+        font-size: 20px;
+    }
+
+    .additional-container {
+        text-align: center;
+    }
+
+    .footer p {
+        font-size: 12px;
+    }
+}
