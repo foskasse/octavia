@@ -79,5 +79,16 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2"></script>
     <script src="script.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.4.0/dist/confetti.browser.min.js"></script>
+<script>
+    document.addEventListener('click', function(){
+        confetti({
+            particleCount: 123,
+            spread: 7000,
+            origin: { y: 0.6 }
+        });
+    });
+    
 </body>
 </html>
