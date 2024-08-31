@@ -45,7 +45,9 @@ function createChart() {
 }
 function updateStoryDays() {
     const storyElement = document.getElementById('story-days');
-    storyElement.innerHTML = `<b>Já passaram mais de ${daysInShop} dias — sim, mais tempo do que demora a encontrar um lugar de estacionamento em Lisboa </b>— durante os quais o pobre Aurelius Bizarro mal pôde sequer espreitar o seu valente carrinho de ferro. Conta a lenda que o nosso herói, armado com a paciência de um santo e a teimosia de um burro, enfrenta a interminável odisseia de tentar reaver o seu precioso investimento.`;
+    if (storyElement) {
+        storyElement.innerHTML = `Já passaram mais de ${daysInShop} dias — sim, mais tempo do que demora a encontrar um lugar de estacionamento em Lisboa — durante os quais o pobre Aurelius Bizarro mal pôde sequer espreitar o seu valente carrinho de ferro. Conta a lenda que o nosso herói, armado com a paciência de um santo e a teimosia de um burro, enfrenta a interminável odisseia de tentar reaver o seu precioso investimento.`;
+    }
 }
 
 // Chama as funções para atualizar a página ao carregar
@@ -53,3 +55,4 @@ window.onload = function() {
     updateStoryDays();
     createChart();
 };
+
